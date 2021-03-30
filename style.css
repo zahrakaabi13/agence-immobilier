@@ -64,7 +64,7 @@
 .content{
     width: 100%;
     position: absolute;
-    top: 50%;
+    top: 40%;
     transform: translateY(-50%);
     text-align: center;
     color:white;
@@ -81,11 +81,11 @@
     line-height: 25px;
 }
 
-.background button{
+.contact{
     width: 200px;
     padding: 15px 0;
     text-align: center;
-    margin: 27% 42%;
+    margin: 0 42%;
     border-radius: 30px;
     border: 2px solid rgb(255, 196, 0);
     background: transparent;
@@ -94,8 +94,57 @@
     font-size: 20px;
     color:white;
 }
+.contact:hover{
+    background-color: rgb(255, 196, 0);
+    color: black;
+}
 
-
+/*-----scrolldown button---------------------------------------------------------------------------*/
+.scrolldown{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 20px;
+    height: 20px;
+    transform: translateY(-80px) translateX(-50%) rotate(45deg);
+ }
+ .scrolldown span{
+     position: absolute;
+     display: block;
+     width: 100%;
+     height: 100%;
+     border-bottom: 5px solid rgb(255, 196, 0);
+     border-right: 5px solid rgb(255, 196, 0);
+     animation: animate 2s linear infinite;
+     opacity: 0;
+ }
+ .scrolldown span:nth-child(1){
+     transform: translate(-15px,-15px);
+ }
+ .scrolldown span:nth-child(2){
+     transform: translate(0,0);
+ }
+ .scrolldown span:nth-child(3){
+     transform: translate(15px,15px);
+ }
+ @keyframes animate{
+     0%{
+         top: -5px;
+         left: -5px;
+         opacity: 0;
+     }
+     25%{
+         top: 0;
+         left: 0;
+         opacity: 1;
+     }
+     100%{
+         top: 5px;
+         left: 5px;
+         opacity: 0;
+     }
+ }
+ 
 
 /*---service box-----------------------------------------------------------------------------------------------------------------------*/
 .title{
@@ -118,7 +167,6 @@
     grid-template-columns: auto auto auto;
     justify-content: center;
     grid-gap: 50px; 
-
 }
 
 .box-container .box{
@@ -298,10 +346,6 @@ background-color: transparent;
     margin-left: 375px;
 }
 
-.search-box:hover > .search-txt{
-    width: 240px;
-    padding: 0 ;
-}
 .search-btn i{
     color:rgb(255, 196, 0);
     float: right;
@@ -323,7 +367,10 @@ background-color: transparent;
     transition: 0.4s;
     width: 0px;
 }
-
+.search-box:hover > .search-txt{
+    width: 240px;
+    padding: 0 ;
+}
 /*---Section Avis client-------------------------------------------------------------------------------------------------------*/
 
 .sectionclients{
@@ -445,9 +492,9 @@ footer .copyright .end i{
     margin-left: 15px;
 }
 
-
-
-
+footer .copyright .end i:hover{
+    color: yellow;
+}
 
 
 

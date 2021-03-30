@@ -75,21 +75,26 @@ h1{
     justify-content: space-evenly;
 }
 
+
+/*---ligne 2 du formulaire*/
+
 .lign2-form{
     display: flex;
     justify-content: space-evenly;
 }
-.lign2-form div{
+
+.lign2-form div input{
     outline: none;
     background-color: white;
-}
-
-.lign2-form input{
     height: 30px;
     width: 200px;
-    outline: none;
 }
-
+.lign2-form i{
+    outline: none;
+    background-color: white;
+    height: 30px;
+    padding: 20px 20px;
+}
 
 
 
